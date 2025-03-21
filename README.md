@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# ElectroMart - MERN Stack E-commerce Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ElectroMart is a full-stack e-commerce website for electronics shopping, built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to browse products, add them to the cart, place orders, and manage orders efficiently.
 
-## Available Scripts
+## 🚀 Technologies Used
 
-In the project directory, you can run:
+### Frontend (React.js)
+- React.js (Component-based UI)
+- React Router (Client-side navigation)
+- Redux Toolkit (State management)
+- Tailwind CSS (Styling)
+- Axios (API calls)
+- Material UI (UI components)
 
-### `npm start`
+### Backend (Node.js & Express.js)
+- Node.js (Runtime)
+- Express.js (API framework)
+- Mongoose (MongoDB ODM)
+- dotenv (Environment variables management)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Database
+- MongoDB (MongoDB Community Server)
+- Mongoose (Schema-based data handling)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Other Tools
+- Postman (API Testing)
+- Git & GitHub (Version control)
+- MongoDB Compass (GUI for MongoDB)
 
-### `npm test`
+## 🛠 Features Implemented
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🛍 Products Management
+- Product Listing (Users can view available electronics)
+- Product Details Page (Detailed description, images, price)
 
-### `npm run build`
+### 🛒 Shopping Cart
+- Add to Cart (Users can add/remove products)
+- Cart Total Calculation (Subtotal & taxes included)
+- Update Cart Items (Modify quantity/remove items)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 🔧 Admin Inventory Management
+- Admin panel with inventory management
+- Add/Delete products functionality
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 📦 Order Management
+- Order Placement (Users can place orders)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 🔧 Admin Order Management
+- View All Orders
+- Mark orders as complete
+- Delete Orders (If necessary)
 
-### `npm run eject`
+## 📌 Installation & Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Install Node.js
+Download and install Node.js from [Node.js official website](https://nodejs.org/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 2. Install MongoDB Community Server
+Download and install MongoDB Community Server from [MongoDB official website](https://www.mongodb.com/try/download/community).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 3. Clone the Repository
+```sh
+git clone https://github.com/utkarshkrr/ElectroMart.git
+cd ElectroMart
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 4. Install Backend Dependencies
+```sh
+cd backend
+npm install
+```
 
-## Learn More
+### 5. Install Frontend Dependencies
+```sh
+cd ../frontend
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 6. Install Tailwind CSS
+Inside the frontend folder:
+```sh
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 7. Install Axios
+```sh
+npm install axios
+```
 
-### Code Splitting
+### 8. Install Mongoose (for MongoDB Connection)
+```sh
+npm install mongoose
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 9. Install Postman (For API Testing)
+Download and install [Postman](https://www.postman.com/downloads/).
 
-### Analyzing the Bundle Size
+### 10. Start the Backend Server
+```sh
+cd backend
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 11. Start the Frontend Server
+```sh
+cd frontend
+npm start
+```
 
-### Making a Progressive Web App
+## 🎯 Current Status
+✅ Core e-commerce functionality implemented: product management, cart system, and orders.
+✅ Admin panel functional with order viewing and inventory management.
+✅ Frontend and backend deployed locally.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📜 License
+This project is licensed under the MIT License.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

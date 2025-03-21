@@ -51,7 +51,7 @@ function Admin() {
     return (
       <Box sx={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", bgcolor: "#f5f5f5" }}>
         <Box sx={{ p: 3, bgcolor: "white", boxShadow: 3, borderRadius: 2, display: "flex", flexDirection: "column", alignItems: "center", gap: 2 }}>
-          <Typography variant="h5" sx={{ fontWeight: "bold" }}>Admin Login</Typography>
+          <Typography variant="h5" sx={{ fontWeight: "bold" }}>Inventory Login</Typography>
           <TextField label="UserID" variant="outlined" value={userId} onChange={(e) => setUserId(e.target.value)} fullWidth />
           <TextField label="Password" type="password" variant="outlined" value={password} onChange={(e) => setPassword(e.target.value)} fullWidth />
           <Button variant="contained" color="primary" onClick={handleLogin}>Login</Button>
